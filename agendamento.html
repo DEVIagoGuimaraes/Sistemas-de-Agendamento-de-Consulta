@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <main>
+        <div class="agendamento">
+            <h1>Agendamento</h1>
+            <form action="" id="formAgendamento">
+                <label for="nome">Nome do paciente</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(79)">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade">
+                <label for="dataconsul">Data da consulta</label>
+                <input type="date" id="dataconsul">
+                <label for="hora">Horário</label>
+                <input type="time" id="hora">
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade">
+                    <option value="clinica-geral">Clínica Geral</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="cardiologia">Cardiologia</option>
+                </select>
+                <label for="conveniado">Conveniado?</label>
+                <input type="radio" name="conveniado" id="sim" value="sim">Sim
+                <input type="radio" name="conveniado" id="nao" value="nao">Não
+                <label for="servico">Serviços adicionais</label>
+                <input type="checkbox" name="servico" id="retorno" value="retorno">Retorno
+                <input type="checkbox" name="servico" id="exames" value="exames"> Exames
+                <input type="checkbox" name="servico" id="teleconsulta" value="teleconsulta">Teleconsulta
+                <input type="checkbox" name="servico" id="receita" value="receita">Receita Médica
+                <label for="sintomas">Sintomas relatados</label>
+                <input type="textarea" id="sintomas">
+                 <label for="medico">Médico Responsável</label>
+                <select name="medico" id="medico">
+                    <option value="dr-silva">Dr.Silva</option>
+                    <option value="dra-ana">Dra.Ana</option>
+                    <option value="dr-joao">Dr.João</option>
+                </select>
+                <button type="submit" id="btnSalvar" onclick="botaodeenvio(event)">Salvar Agendamento</button>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
