@@ -2,7 +2,7 @@ function validarLogin(event) {
     event.preventDefault()
 
     const usuarioValido = "admin"
-    const senhaValida = "123456"
+    const senhaValida = "12345"
 
    const usuarioInput = document.getElementById("usuario")
    const senhaInput = document.getElementById("password")
